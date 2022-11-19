@@ -1,0 +1,23 @@
+{% extends 'userauth/main.html'%}
+    {% block head_title %}{% endblock %}
+    {% block extra_head %}{% endblock %}
+ 
+    {% block body %}
+
+    {% if messages %}
+    <div class="amber lighten-4 flow-text">
+      <ul class="center">
+        {% for message in messages %}
+        <li>{{message}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+
+    {% block content %}
+    {% endblock %}
+    {% endblock %}
+    {% block extra_body %}
+    {% endblock %}
+  </body>
